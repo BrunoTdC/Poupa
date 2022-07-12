@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.JS"></script>
+</head>
+<body>
+    <header>
+        <img width="44" src="cofre.png" alt="">
+        <span>Poupança</span>
+    </header>
+    <main>
+        <div>
+            <label for="">Tipo</label>
+            <select name="data" id="tipo">
+                <option value="">Selecione</option>
+                <option value="Vale">Vale</option>
+                <option value="Pagamento">Pagamento</option>
+                <option value="13º Salario">13º Salario</option>
+                <option value="Ferias">Ferias</option>
+                <option value="PIS">PIS</option>
+               
+            </select>
+        </div>
+        <div>
+            <label for="">Data</label>
+            <input id ="dia" type="number" max="31" min="1" placeholder="Dia">
+
+            <select name="data" id="mes" placeholder="Mês">
+                <option value="">Mês</option>
+                <option value="01">Janeiro</option>
+                <option value="02">Fevereiro</option>
+                <option value="03">Março</option>
+                <option value="04">Abril</option>
+                <option value="05">Maio</option>
+                <option value="06">Junho</option>
+                <option value="07">Julho</option>
+                <option value="08">Agosto</option>
+                <option value="09">Setembro</option>
+                <option value="10">Outubro</option>
+                <option value="11">Novenbro</option>
+                <option value="12">Dezembro</option>
+            </select>
+
+            
+            <select name="data" id="ano" placeholder="Ano">
+                <option value="">Ano</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                
+            </select>
+            
+            
+        </div>
+        
+        <div>
+            <label for="">Valor</label>
+            <input id ="valor" type="number" placeholder="Valor do depósito">
+        </div>
+        <div>
+            <button class="btn1" onclick="fundo.salvar()">Adicionar Fundo</button>
+            <button class="btn2" onclick="fundo.apagar()">Apagar</button>
+            
+        </div>
+        <div id="res">
+           
+        </div>
+        <div>
+            <table border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>DATA</th>
+                    <th>TIPO</th>
+                    <th>Valor</th>
+                </thead>
+                <tbody id="tbody" >
+
+                </tbody>
+            </table>
+            
+        </div>
+    </main>
+</body>
+</html>
